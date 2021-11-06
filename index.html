@@ -24,14 +24,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                   <img src="img/logo.png" alt="Company logo image" class="img-fluid" />
+                    <img src="img/logo.png" alt="Company logo image" class="img-fluid" />
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-6 col-xl-2 mt-4">
-                    <a href="#reserveForm"><button class="btn btn-info btn-lg text-nowrap">Reserve Campsite</button></a>
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
                     <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
-        				<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row form-group">
-                            <label for="numCampers" class="col col-sm-6 col-form-label">Number of Campers</label>
+                                <label for="numCampers" class="col col-sm-6 col-form-label">Number of Campers</label>
                                 <div class="col">
                                     <select class="form-control" name="numCampers" id="numCampers">
                                         <option value="select">Select...</option>
@@ -127,7 +127,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <button type="submit"class="btn btn-primary">Search</button>
+                                    <button type="submit" class="btn btn-primary">Search</button>
                                 </div>
                             </div>
                         </form>
@@ -167,5 +167,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
+
 </html>
